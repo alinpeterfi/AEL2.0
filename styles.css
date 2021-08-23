@@ -1,0 +1,133 @@
+:root {
+    --adaptable-div-bg-color: #d9d9d9;
+    --div-w: 70%;
+    --size-of-font-line1: 2.5vw;
+    --size-of-font-line2: 2vw;
+    --primary-color: #b80000;
+    --secondary-color: #c30000;
+    --logo-div-size: 15vw;
+    --logo-div-padding-top: 15px;
+    --nav-bar-text-color: white;
+}
+/*Variabile*/
+
+@media (max-width: 992px) {
+    :root {
+        --div-w: 100%;
+        --size-of-font-line1: 3.5vw;
+        --size-of-font-line2: 3vw;
+        --logo-div-size: 25vw;
+        --logo-div-padding-top: 10px;
+    }
+    .carousel-indicators {
+        visibility: hidden;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        visibility: hidden;
+    }
+    .carousel-item img {
+        height: 35vw !important;
+    }
+    .nav-item {
+        font-size: 0.9em !important;
+    }
+}
+/*Redefinire variabile pentru varianta mobile*/
+
+.logo-div {
+    width: var(--logo-div-size);
+    padding-left: 15px;
+    padding-top: var(--logo-div-padding-top);
+}
+/*Stil pentru logo*/
+
+.adaptable-div {
+    margin: auto;
+    background-color: var(--adaptable-div-bg-color);
+    width: var(--div-w);
+    background: rgba(d9, d9, d9, 0.5);
+    padding-bottom: 5.5%;
+}
+/*Stil pentru container pagina*/
+
+.logo-title-container-div {
+    padding: 20px 3px;
+    display: flex;
+}
+/*Stil pentru div-ul care contine logo-ul si titlul paginii*/
+
+.title-div {
+    padding-right: 8px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+/*Stil pentru div-ul cu titlul*/
+
+.first-line-div {
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: var(--size-of-font-line1);
+}
+/*Stil pentru titlu continut*/
+
+.second-line-div {
+    margin: 0 auto;
+    text-align: center;
+    font-size: var(--size-of-font-line2);
+}
+/*Stil pentru descrierea de pe pagina principala*/
+
+.carousel-item img {
+    height: 25vw;
+}
+/*Stil pentru imagine carousel*/
+
+.carousel-item .btn-danger {
+    background-color: var(--secondary-color);
+    border-radius: 7px;
+    float: right;
+}
+/*Stil pentru buton carousel*/
+
+.carousel-caption p,
+.btn-danger {
+    display: inline-block;
+}
+/*Stil pentru aranjare caption si buton in carousel*/
+
+ul .navbar-nav li .nav-item {
+    display: inline;
+}
+/*Stil pentru aranjare meniu*/
+
+.nav-div {
+    margin-top: 10px;
+    background-color: var(--primary-color);
+    border-radius: 7px;
+}
+/*Stil pentru navbar*/
+
+div nav div ul li a {
+    color: var(--nav-bar-text-color);
+}
+/*Stil pentru componente meniu*/
+
+.welcome-header {
+    margin-top: 30px;
+    margin-left: 15px;
+}
+/*Stil pentru container titlu si text de descriere pagina principala*/
+
+.welcome-para {
+    margin-left: 15px;
+}
+/*Stil pentru descriere pagina principala*/
+
+div nav div ul li a:hover {
+    background-color: var(--secondary-color);
+    border-radius: 7px;
+    color: var(--nav-bar-text-color);
+}
+/*Stil pentru hover peste componentele meniului*/

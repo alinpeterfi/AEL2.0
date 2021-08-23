@@ -1,0 +1,523 @@
+:root {
+    --adaptable-div-bg-color: #d9d9d9;
+    --div-w: 70%;
+    --size-of-font-line1: 2.5vw;
+    --size-of-font-line2: 2vw;
+    --primary-color: #b80000;
+    --secondary-color: #c30000;
+    --logo-div-size: 15vw;
+    --logo-div-padding-top: 15px;
+    --nav-bar-text-color: white;
+}
+/*Variabile CSS*/
+
+@media (max-width: 992px) {
+    :root {
+        --div-w: 100%;
+        --size-of-font-line1: 3.5vw;
+        --size-of-font-line2: 3vw;
+        --logo-div-size: 25vw;
+        --logo-div-padding-top: 10px;
+    }
+    /*redefinire variabile pentru versiunea de mobile*/
+
+    .materiale-didactice-content-div {
+        margin: 10px 5px !important;
+    }
+
+    .disciplina-p {
+        font-size: 1.2em !important;
+    }
+
+    .educatie-pagina-2-content {
+        font-size: 0.65em;
+    }
+
+    .cercetare-content-div {
+        margin: 0px 0.65vw !important;
+    }
+
+    .navbar .navbar-brand {
+        font-size: 1.3em !important;
+    }
+    .carousel-item img {
+        height: 35vw !important;
+    }
+
+    .curs-div,
+    .lab-div {
+        margin: 0.65vw !important;
+    }
+    .personal-content-border {
+        margin: 0px 1.45vw !important;
+    }
+    .personal-content-top {
+        margin: auto !important;
+        width: 30% !important;
+    }
+
+    .personal-content-bottom .personal-img {
+        height: 20vw !important;
+        width: 15vw !important;
+    }
+}
+/*Modificari ale claselor pentru versinea de mobile*/
+
+@media (max-width: 1300px) {
+    .section-div {
+        font-size: 0.7em;
+    }
+}
+/*Font size pentru Educatie si EducatieSecMaster*/
+
+@media (max-width: 700px) {
+    .section-div {
+        font-size: 0.5em;
+    }
+}
+/*Font size pentru Educatie si EducatieSecMaster*/
+
+.adaptable-div {
+    margin: auto;
+    background-color: var(--adaptable-div-bg-color);
+    width: var(--div-w);
+    background: rgba(d9, d9, d9, 0.5);
+}
+/*Div container pentru fiecare pagina HTML*/
+
+ul .navbar-nav li .nav-item {
+    display: inline;
+}
+/*Butoane meniu navbar*/
+
+.nav-div {
+    background-color: var(--primary-color);
+    border-radius: 7px;
+}
+/*Navbar container*/
+
+div nav div ul li a {
+    color: var(--nav-bar-text-color);
+}
+/*Font color navbar*/
+
+div nav div ul li a:hover {
+    background-color: var(--secondary-color);
+    border-radius: 7px;
+    color: var(--nav-bar-text-color);
+}
+/*Navbar color hover*/
+
+.navbar .navbar-brand {
+    margin: auto;
+    color: var(--nav-bar-text-color);
+    font-weight: bold;
+    font-size: 2em;
+}
+/*Navbar brand style*/
+
+.navbar-brand:hover {
+    color: var(--nav-bar-text-color) !important;
+    text-decoration: none;
+}
+/*Navbar brand hover*/
+
+.educatie-content-div {
+    margin: 20px 30px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: var(--secondary-color);
+}
+/*Container div pentru sectiunile Licenta si Master in EducatieMain.html*/
+
+.educatie-content-div .titlu-sectiune-h,
+.btn-danger {
+    display: inline-block;
+}
+/*Pozitionare in-line pentru titlu si buton in container div pentru sectiunile Licenta si Master*/
+
+.educatie-content-div .btn-danger {
+    float: right;
+    background-color: var(--primary-color);
+    margin: 30px 40px 0 0;
+}
+/*Style pentru buton in container div pentru sectiunile Licenta si Master*/
+
+.titlu-pagina {
+    font-weight: bold;
+    text-align: center;
+}
+/*Stil titlu pagini secundare*/
+
+.titlu-descriere-pagina-div {
+    margin-top: 20px;
+}
+/*Stil pentru container div titlu+descriere pagini secundare*/
+
+.descriere-content-p {
+    margin-top: 40px;
+    text-align: justify;
+    padding: 0 40px;
+}
+/*Stil pentru paragraf descriere pagini secundare*/
+
+.content-p {
+    text-align: justify;
+    margin: 20px 70px 20px 30px;
+}
+/*Stil pentru paragrafe content din paginile secundare*/
+
+.titlu-sectiune-h {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+/*Stil pentru titlurile "Nivel Licenta" si "Nivel Master"*/
+
+.buton-back .btn-danger {
+    background-color: var(--primary-color);
+    margin: 30px 0 40px 30px;
+    padding: 10px 50px;
+}
+/*Stil div buton intoarcere pe paginile principale de pe paginile secundare*/
+
+.educatie-pagina-2-content {
+    margin: 0 60px;
+    color: var(--secondary-color);
+}
+/*Stil pentru container div pentru paginile "Educatie" secundare*/
+
+.line {
+    border-bottom: 1px solid var(--secondary-color);
+    display: block;
+    margin: 10px 0;
+}
+/*Stil linie de separare discipline din sectiunea "Educatie"*/
+
+.table-header-div {
+    color: var(--primary-color);
+    margin-top: 25px;
+    font-weight: bold;
+}
+/*Stil pentru titlurile din paginile "Educatie" secundare*/
+
+.specializarea-span {
+    float: right;
+    width: 150px;
+}
+/*Stil pentru specializari*/
+
+#specializare-long-span {
+    font-size: 0.8em;
+}
+/*Marimea fontului pentru specializarile cu mai multe caractere*/
+
+.materiale-didactice-content-container-div {
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+/*Stil pentru content-ul din paginile "Materiale didactice"*/
+
+.table-content-div {
+    padding-bottom: 25px;
+}
+/*Stil pentru container div pentru Discipline si Specializari*/
+
+.materiale-didactice-content-div {
+    display: flex;
+    margin: 30px 30px;
+}
+/*Stil pentru container div pentru un rand de discipline*/
+
+.books-img {
+    width: 10vw;
+}
+/*Stil pentru icon discipline*/
+
+.disciplina-p {
+    font-size: 1.8em;
+}
+/*Font-size discipline*/
+
+.disciplina-div {
+    border: solid;
+    margin: 0 10px;
+    border-radius: 20px;
+    border-color: var(--primary-color);
+    padding: 20px 20px;
+    text-align: center;
+    flex: 1;
+}
+/*Stil pentru div-ul echivalent fiecarei discipline*/
+
+.disciplina-div:hover {
+    background-color: var(--secondary-color);
+}
+/*Stil pentru hover peste fiecare disciplina*/
+
+.subtitlu-p {
+    font-size: 2em;
+    margin-left: 30px;
+}
+/*Stil pentru subtitlurile "Cursuri" si "Laboratoare"*/
+
+.curs-div {
+    border: solid;
+    margin: 0 10px;
+    border-radius: 20px;
+    border-color: var(--primary-color);
+    padding: 5px 32px;
+    text-align: center;
+    flex: 1;
+    color: var(--primary-color);
+}
+/*Stil pentru div-urile de cursuri*/
+
+.lab-div {
+    border: solid;
+    margin: 0 10px;
+    border-radius: 20px;
+    border-color: var(--primary-color);
+    padding: 5px 10px;
+    text-align: center;
+    flex: 1;
+    color: var(--primary-color);
+}
+/*Stil pentru div-urile de laboratoare*/
+
+.curs-div:hover {
+    background-color: var(--secondary-color);
+}
+/*Stil pentru hover peste fiecare curs*/
+
+.lab-div:hover {
+    background-color: var(--secondary-color);
+}
+/*Stil pentru hover peste fiecare laborator*/
+
+.cercetare-titlu {
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bold;
+}
+/*Stil pentru titlul paginii "CercetareMain"*/
+
+.cercetare-secundar-titlu {
+    text-align: center;
+    padding: 15px 0px;
+    font-weight: bold;
+}
+/*Stil pentru titlul paginii "Cercetare"*/
+
+.cercetare-p {
+    padding: 20px 50px;
+    text-align: justify;
+}
+/*Stil pentru paragraful de sub titlul paginii "CercetareMain"*/
+
+.cercetare-content-container-div {
+    display: flex;
+    margin: 10px;
+}
+/*Stil pentru container div content in pagina "CercetareMain"*/
+
+.cercetare-content-div {
+    border: solid;
+    margin: 0px 80px 20px 80px;
+    border-radius: 20px;
+    border-color: var(--primary-color);
+    padding: 10px 60px 10px 60px;
+    text-align: center;
+    flex: 1;
+}
+/*Stil pentru div-urile cu content in pagina "CercetareMain": ITEC si GCER*/
+
+.cercetare-img {
+    width: 9vw;
+    padding: 10px 0px;
+}
+/*Stil pentru imaginile din pagina "CercetareMain"*/
+
+.cercetare-descriere {
+    text-align: justify;
+    padding: 30px;
+}
+/*Stil pentru div descriere din pagina "Cercetare"*/
+
+.cercetare-content-div:hover {
+    background-color: var(--secondary-color);
+}
+/*Stil pentru hover peste div-urile cu content in pagina "CercetareMain": ITEC si GCER*/
+
+.carousel-item img {
+    height: 25vw;
+}
+/*Stil pentru imagini carousel*/
+
+.contact-content-header-p {
+    font-size: 2em;
+}
+/*Stil pentru titlul fiecari sectinui din pagina "Contact"*/
+
+.contact-content-container {
+    margin: 30px 50px 30px 30px;
+}
+/*container div pentru continutul paginii "Contact"*/
+
+.info-ul {
+    list-style-type: none;
+    padding-left: 20px;
+    font-size: 1.5em;
+}
+/*Stil pentru ul din pagina "Contact"*/
+
+.contact-content {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+/*Stil pentru div-urile cu content pe acelasi rand din pagina "Contact"*/
+
+.section-div {
+    width: 40%;
+}
+/*Stil pentru fiecare sectiune de content din pagina "Contact"*/
+
+.map-responsive {
+    margin-top: 35px;
+    overflow: hidden;
+    padding-bottom: 65%;
+    position: relative;
+    height: 0;
+}
+/*Stil pentru div-ul cu localizarea ETTI pe Google Maps din pagina "Contact"*/
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+/*Stil pentru pozitionarea hartii din pagina "Contact"*/
+
+.bold-line-li {
+    font-weight: bold;
+}
+/*Stil pentru textul bold din pagina "Contact"*/
+
+.personal-titlu {
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+}
+/*Stil titlu pagina "Personal"*/
+
+.personal-content-border {
+    border: solid;
+    margin: 10px 50px;
+    width: 30%;
+    border-radius: 20px;
+    border-color: var(--secondary-color);
+    padding: 10px;
+}
+/*Stil pentru bordura din pagina "Personal"*/
+
+#personal-director {
+    border-color: var(--primary-color);
+}
+/*Stil pentru div-ul pentru directorul de departament din pagina "Personal"*/
+
+.personal-content-top {
+    margin: auto;
+    width: 23.5%;
+}
+/*Stil pentru primul rand de content din pagina "Personal"*/
+
+.personal-img {
+    width: 10vw;
+    height: 15vw;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+/*Stil pentru imaginile din pagina "Personal"*/
+
+.personal-content-text {
+    margin: 0;
+}
+/*Stil pentru textul de sub imaginile din pagina "Personal"*/
+
+.personal-content-subtitle {
+    font-weight: bold;
+}
+/*Stil pentru textul bold din pagina "Personal"*/
+
+.personal-content-bottom {
+    padding: 0px;
+    display: flex;
+    flex: 1;
+}
+/*Stil pentru al doilea rand de content din pagina "Personal"*/
+
+.personal-content-director {
+    font-size: 1.1em;
+}
+/*Stil pentru h4 in pagina "Personal"*/
+
+.personal-subtitlu {
+    font-weight: normal;
+    padding: 10px 0px 0px 20px;
+}
+/*Stil pentru subtitlu in pagina "Personal"*/
+
+.news-content-p {
+    text-align: justify;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 20px;
+    padding-right: 120px;
+}
+/*Stil pentru content stiri din pagina "StiriSiEvenimenteMain"*/
+
+.stire-container,
+.news-content-p .educatie-sec-btn {
+    display: inline-block;
+}
+/*Stil pentru elementele din div-ul container din pagina "StiriSiEvenimenteMain"*/
+
+.news-content .btn-danger {
+    background-color: var(--primary-color);
+    float: right;
+    margin-top: 50px;
+}
+/*Stil pentru butoanele din pagina "StiriSiEvenimenteMain"*/
+
+.stire-container {
+    margin: 0 30px;
+}
+/*Stil pentru div-ul container din pagina "StiriSiEvenimenteMain"*/
+
+.stiri-sec-container {
+    padding-bottom: 300px;
+    margin: 0 30px;
+}
+/*Stil pentru container div-ul din pagina "StiriSiEvenimenteSec"*/
+
+.news-content-p-sec {
+    text-align: justify;
+}
+/*Stil pentru content-ul stirilor din pagina "StiriSiEvenimenteSec"*/
+
+.news-content-title-sec {
+    text-align: center;
+}
+/*Stil pentru titlu stirilor din pagina "StiriSiEvenimenteSec"*/
+
+.educatie-sec-titlu:hover {
+    cursor: pointer;
+}
+/*Stil pentru hover peste titlurile din paginile "Educatie" si "EducatieSecMaster"*/
+
+html,
+body {
+    height: 100%;
+}
